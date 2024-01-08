@@ -14,6 +14,35 @@
 #define RAISE 2
 #define DUAL 3
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+			combo_esc {
+				timeout-ms = <50>;
+				key-positions = <44 47>;
+				bindings = <&mo DUAL>;
+        	};
+   		};
+	};
+
+/ {
+    macros {
+        reload_vscode_window: reload_vscode_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp P>
+                , <&macro_release &kp LGUI>
+				, <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp DOT>
+                , <&macro_release &kp LSHIFT>
+				, <&macro_tap &kp R &kp E &kp L &kp O &kp RET>
+                ;
+        };
+    };
+};
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
@@ -46,7 +75,7 @@
 	&kp LCTRL &reload_vscode_window   &none   &none   &none  &none &kp PSCRN &kp LSHFT        &mo DUAL &kp DEL &kp N1 &kp N2  &kp N3 &none &none    &none
 	                  &kp LGUI &kp DEL &kp RET &mo LOWER &kp RET        &kp SPACE &mo RAISE  &kp N0 &kp BSPC  &none
 			>;
-			bindings = <&reload_vscode_window>;
+
 			sensor-bindings = <&inc_dec_kp LC(LG(LEFT)) LC(LG(RIGHT)) &inc_dec_kp UP DOWN>;
 		};
 
@@ -77,31 +106,3 @@
 };
 
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-			combo_esc {
-				timeout-ms = <50>;
-				key-positions = <44 47>;
-				bindings = <&mo DUAL>;
-        	};
-   		};
-	};
-
-/ {
-    macros {
-        reload_vscode_window: reload_vscode_window {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp P>
-                , <&macro_release &kp LGUI>
-				, <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp DOT>
-                , <&macro_release &kp LSHIFT>
-				, <&macro_tap &kp R &kp E &kp L &kp O &kp RET>
-                ;
-        };
-    };
-};
