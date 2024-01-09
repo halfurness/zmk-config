@@ -53,6 +53,10 @@
     tapping-term-ms = <200>;
 };
 
+&sensors {
+    triggers-per-rotation = <40>;
+};
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
