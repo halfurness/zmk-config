@@ -53,8 +53,7 @@
     tapping-term-ms = <200>;
 };
 
-&sensors {;
-
+&sensors {
 	left_config {
         triggers-per-rotation = <20>;
     };
