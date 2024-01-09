@@ -59,7 +59,7 @@
     };
 
     right_config {
-    	triggers-per-rotation = <15>;
+    	triggers-per-rotation = <30>;
     };
 };
 
@@ -68,7 +68,8 @@
     };
 
     &right_encoder {
-        steps = <30>;
+         resolution = <2>;
+
     };
 
 / {
