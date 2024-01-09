@@ -82,7 +82,7 @@
 		RAISE_layer {
 			bindings = <
 	&kp TAB   &kp EXCL &none &none &kp PRCNT &none                                              &none &kp STAR &kp LPAR &kp RPAR &kp SEMI  &kp GRAVE
-	&kp LSHFT &kp AT   &none &kp DLLR &kp TILDE &none                                              &kp HASH &none  &none    &kp UP   &kp RIGHT &kp SQT
+	&kp LSHFT &kp AT   &none &kp DLLR &kp TILDE &none                                              &kp HASH &none  &none  &kp UP   &kp RIGHT &kp SQT
 	&kp LCTRL &none    &none &kp CARET &none &none &kp LSHFT &kp LSHFT         &mo DUAL &kp DEL &none &kp AMPS &kp LEFT &kp DOWN &kp BSLH  &kp PIPE
 	                   &kp LGUI &kp DEL &kp RET &mo LOWER &kp RET        &kp SPACE &mo RAISE &kp PG_UP &kp PG_DN &kp RALT
 			>;
