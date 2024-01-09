@@ -54,7 +54,7 @@
 };
 
 &sensors {
-    triggers-per-rotation = <40>;
+    triggers-per-rotation = <2>;
 };
 
 / {
@@ -69,7 +69,7 @@
 	                &kp ESC &kp LALT &kp LGUI &mo LOWER &kp RET        &kp SPACE &mo RAISE &kp HOME &kp END &kp LC(LA(PAUSE_BREAK))
 			>;
 
-			 sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp LEFT RIGHT>;
+			 sensor-bindings = <&inc_dec_kp LALT(LSHIFT) LALT(TAB) &inc_dec_kp LEFT RIGHT>;
 		};
 
 		LOWER_layer {
