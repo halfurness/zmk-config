@@ -57,23 +57,15 @@
     triggers-per-rotation = <30>;
 };
 
-  	&left_encoder: encoder_left {
-		compatible = "alps,ec11";
-		label = "LEFT_ENCODER";
-		a-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+  &left_encoder {
+        steps = <80>;
 		resolution = <4>;
-		status = "disabled";
-	};
+    };
 
-	&right_encoder: encoder_right {
-		compatible = "alps,ec11";
-		label = "RIGHT_ENCODER";
-		a-gpios = <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    &right_encoder {
+        steps = <30>;
 		resolution = <2>;
-		status = "disabled";
-	};
+    };
 
 / {
 	keymap {
