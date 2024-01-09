@@ -54,9 +54,13 @@
 };
 
 &sensors {
-	
-    	triggers-per-rotation = <30>
-    
+	left_config {
+        triggers-per-rotation = <20>;
+    };
+
+    right_config {
+    	triggers-per-rotation = <30>;
+    };
 };
 
   &left_encoder {
