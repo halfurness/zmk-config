@@ -65,12 +65,10 @@
 
   &left_encoder {
         steps = <80>;
-		resolution = <4>;
     };
 
     &right_encoder {
         steps = <30>;
-		resolution = <2>;
     };
 
 / {
