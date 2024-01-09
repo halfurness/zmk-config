@@ -106,7 +106,7 @@
 	                   &kp LGUI &kp DEL &kp RET &mo LOWER &kp RET        &kp SPACE &mo RAISE &kp PG_UP &kp PG_DN &kp RALT
 			>;
 
-			sensor-bindings = < &inc_dec_kp K_UNDO K_AGAIN &inc_dec_kp BSPC DEL>;
+			sensor-bindings = < &inc_dec_kp LA(LG(LEFT)) LA(LG(RIGHT)) &inc_dec_kp BSPC DEL>;
 		};
 
 		DUAL_layer {
