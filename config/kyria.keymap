@@ -89,7 +89,7 @@
         plswork: plswork {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <LA(TAB)>, <LA(TAB)>;
+            bindings = <&kp LA(TAB)>, <&kp LA(TAB)>;
         };
     };
 
@@ -137,7 +137,7 @@
 	                 &bt BT_CLR &kp DEL &kp RET &mo LOWER &kp RET        &kp C_PP &mo RAISE &kp C_PREV &kp C_NEXT &kp LA(Q)
 			>;
 
-			sensor-bindings = <&plswork &inc_dec_kp RIGHT LEFT>;
+			sensor-bindings = <&plswork &plswork>;
 		};
 	};
 
