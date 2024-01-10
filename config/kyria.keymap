@@ -55,11 +55,11 @@
 
 &sensors {
 	left_config {
-        triggers-per-rotation = <4>;
+        triggers-per-rotation = <10>;
     };
 
     right_config {
-    	triggers-per-rotation = <30>;
+    	triggers-per-rotation = <15>;
     };
 };
 
@@ -69,7 +69,7 @@
 
     &right_encoder {
         steps = <30>;
-		resolution = <2>;
+		// resolution = <2>;
     };
 
 
