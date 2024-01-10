@@ -53,40 +53,26 @@
     tapping-term-ms = <200>;
 };
 
-// &sensors {
-// 	left_config {
-//         triggers-per-rotation = <4>;
-//     };
+&sensors {
+	left_config {
+        triggers-per-rotation = <4>;
+    };
 
-//     right_config {
-//     	triggers-per-rotation = <60>;
-//     };
-// };
+    right_config {
+    	triggers-per-rotation = <30>;
+    };
+};
 
-//   &left_encoder {
-//         steps = <80>;
-//     };
+  &left_encoder {
+        steps = <80>;
+    };
 
-//     &right_encoder {
-//         steps = <30>;
-
-//     };
-
-	&left_encoder {
-		compatible = "alps,ec11";
-		a-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <4>;
-		status = "disabled";
-	};
-
-	&right_encoder {
-		compatible = "alps,ec11";
-		a-gpios = <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    &right_encoder {
+        steps = <30>;
 		resolution = <2>;
-		status = "disabled";
-	};
+    };
+
+
 
 / {
 	keymap {
