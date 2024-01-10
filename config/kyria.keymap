@@ -71,7 +71,7 @@
 	steps = <30>;
 };
 
-&key_repeat;
+&key_repeat
 
 
 / {
@@ -119,7 +119,7 @@
 	                 &bt BT_CLR &kp DEL &kp RET &mo LOWER &kp RET        &kp C_PP &mo RAISE &kp C_PREV &kp C_NEXT &kp LA(Q)
 			>;
 
-			sensor-bindings = <&key_repeat LA(TAB) LA(TAB) &inc_dec_kp RIGHT LEFT>;
+			sensor-bindings = <&inc_dec_kp LA(TAB) LA(TAB) &inc_dec_kp RIGHT LEFT>;
 		};
 	};
 
