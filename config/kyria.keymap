@@ -71,10 +71,7 @@
 	steps = <30>;
 };
 
-&key_repeat {
-
-}
-
+&key_repeat;
 
 
 / {
