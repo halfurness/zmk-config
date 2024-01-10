@@ -22,6 +22,11 @@
 				key-positions = <44 47>;
 				bindings = <&mo DUAL>;
         	};
+			combo_esc {
+				timeout-ms = <50>;
+				key-positions = <44 47>;
+				bindings = <&mo DUAL>;
+        	};
    		};
 	};
 
@@ -38,6 +43,18 @@
                 , <&macro_tap &kp DOT>
                 , <&macro_release &kp LSHIFT>
 				, <&macro_tap &kp R &kp E &kp L &kp O &kp RET>
+                ;
+        };
+
+		reset_npm: reset_npm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+				, <&macro_press &kp UP>
+                , <&macro_tap &kp RET>
                 ;
         };
     };
@@ -98,7 +115,7 @@
 		LOWER_layer {
 			bindings = <
 	&kp F1    &kp F2  &kp F3  &kp F4  &kp F5 &kp F6                                            &kp N7 &kp N8  &kp N9 &kp Y &kp SEMI &kp DEL
-	&kp LSHFT &kp F10 &kp F11 &kp F12 &none  &none                                             &kp N4 &kp N5  &kp N6 &kp I &none    &none
+	&kp LSHFT &kp F10 &kp F11 &kp F12 &none  &reset_npm                                             &kp N4 &kp N5  &kp N6 &kp I &none    &none
 	&kp LCTRL &reload_vscode_window   &none   &none   &none  &none &kp PSCRN &kp LSHFT        &mo DUAL &kp DEL &kp N1 &kp N2  &kp N3 &none &none    &none
 	                  &kp LGUI &kp DEL &kp RET &mo LOWER &kp RET        &kp SPACE &mo RAISE  &kp N0 &kp BSPC  &none
 			>;
