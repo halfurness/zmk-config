@@ -22,11 +22,6 @@
 				key-positions = <44 47>;
 				bindings = <&mo DUAL>;
         	};
-			combo_esc {
-				timeout-ms = <50>;
-				key-positions = <44 47>;
-				bindings = <&mo DUAL>;
-        	};
    		};
 	};
 
