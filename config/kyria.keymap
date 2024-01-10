@@ -63,14 +63,17 @@
     };
 };
 
-  &left_encoder {
-        steps = <80>;
-    };
+&left_encoder {
+	steps = <80>;
+};
 
-    &right_encoder {
-        steps = <30>;
-		// resolution = <2>;
-    };
+&right_encoder {
+	steps = <30>;
+};
+
+&key_repeat {
+
+}
 
 
 
@@ -119,11 +122,11 @@
 	                 &bt BT_CLR &kp DEL &kp RET &mo LOWER &kp RET        &kp C_PP &mo RAISE &kp C_PREV &kp C_NEXT &kp LA(Q)
 			>;
 
-			sensor-bindings = < &inc_dec_kp PG_UP PG_DN &inc_dec_kp RIGHT LEFT>;
+			sensor-bindings = <&key_repeat LA(TAB) LA(TAB) &inc_dec_kp RIGHT LEFT>;
 		};
 	};
 
 	
 };
 
-
+`
