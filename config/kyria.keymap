@@ -86,10 +86,16 @@
 
 / {
 	 behaviors {
+		td_mt: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LALT TAB>, <&kp TAB>;
+        };
         plswork: plswork {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp LA(TAB)>, <&kp LA(TAB)>;
+            bindings = <&td_mt>, <&td_mt>;
         };
     };
 
