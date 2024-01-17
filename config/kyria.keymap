@@ -155,7 +155,7 @@
 	                 &bt BT_CLR &kp DEL &kp RET &mo LOWER &kp RET        &kp C_PP &mo RAISE &kp C_PREV &kp C_NEXT &kp LA(Q)
 			>;
 
-			sensor-bindings = <&plswork &plswork>;
+			sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT) &inc_dec_kp LEFT RIGHT>;
 		};
 	};
 
